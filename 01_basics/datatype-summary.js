@@ -31,3 +31,30 @@ const functionValue = function(){
 }
 
 console.log(typeof obj)
+
+//-------------------------------------Memory in js----------------------------
+
+// Stack (primitive) heap (non-primitive) 
+
+let oneVariable = "Hello World"
+let secondVar = oneVariable
+secondVar = "Hello Universe"
+console.log(oneVariable);
+console.log(secondVar)
+
+// in above both primitive type variable allocate different memory in stack. So even after refering one to another if we change any variable value other variable value will not be affected.
+
+let firstObject = {
+    name : "naresh",
+    mail : "naresh@mail.com"
+}
+
+let secondObject = firstObject
+
+secondObject.mail = "naresh@google.com" 
+//becouse of above line email will be change in both objects
+
+// above change will be impected in both the objects
+
+console.log(firstObject);
+console.log(secondObject)
