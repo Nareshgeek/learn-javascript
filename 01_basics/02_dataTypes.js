@@ -19,4 +19,4 @@ let city;
 // symbol => unique
 
 console.log(typeof null);
-console.log(typeof city);d
+console.log(typeof city);
