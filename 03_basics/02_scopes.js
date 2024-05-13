@@ -35,3 +35,24 @@ if(true){
     // console.log(lastName)
 }
 // console.log(user)
+
+
+//++++++++++++++++++++++++++++++++ interesting +++++++++++++++++++++++++++++
+
+console.log(addOne(5)) // I can use this before function
+
+// One way
+function addOne(num){
+    return num+1;
+}
+
+console.log(addOne(5))
+
+
+//addTwo(5) // we cannot use this before initialize
+// another way to create function
+const addTwo = function(num){
+    return num+2;
+}
+
+console.log(addTwo(5)) // I cannot use it before addTwo variable decleration
